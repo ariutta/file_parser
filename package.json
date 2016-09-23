@@ -1,0 +1,42 @@
+{
+  "name": "fixed2sql",
+  "version": "1.0.0",
+  "description": "Load input files into SQL DB",
+  "main": "index.js",
+  "bin": "./bin/fixed2sql.js",
+  "scripts": {
+    "postinstall": "mkdir data && mkdir specs",
+    "test": "npm run test:e2e",
+    "test:e2e": "mocha ./test/spec/api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariutta/fixed2sql.git"
+  },
+  "keywords": [
+    "parse",
+    "sql",
+    "load"
+  ],
+  "author": "Anders Riutta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ariutta/fixed2sql/issues"
+  },
+  "homepage": "https://github.com/ariutta/fixed2sql#readme",
+  "dependencies": {
+    "csv-parse": "^1.1.7",
+    "humps": "^1.1.0",
+    "lodash": "^4.16.1",
+    "node-env-file": "^0.1.8",
+    "pg-promise": "^5.3.3",
+    "rx": "^4.1.0",
+    "rx-node": "^1.0.2",
+    "split": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "sinon": "^1.17.6"
+  }
+}
