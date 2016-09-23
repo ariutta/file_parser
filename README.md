@@ -32,16 +32,10 @@ Test:
 npm test
 ```
 
-Run:
-
-```
-fixed2sql
-```
-
-or if that doesn't work:
+## Run
 
 ```
 node ./bin/fixed2sql.js
 ```
 
-If the appropriate specification file(s) are in the `spec/` directory, you can now drop data files into the `data/` directory.
+If the appropriate specification file(s) are in the `spec/` directory, you can now drop data files into the `data/` directory and watch them load.
